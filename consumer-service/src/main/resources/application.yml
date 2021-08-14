@@ -1,0 +1,23 @@
+server:
+  port: 8081
+spring:
+  rabbitmq:
+    host: localhost
+    password: guest
+    port: 15672
+    username: guest
+    exchange: employeeexchange
+    queue: employeequeue
+    routingkey: employeeroutingkey
+
+  mail:
+    host: smtp.gmail.com
+    username: thorat.paju@gmail.com
+    password: xipnheukjbhgzmip
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
